@@ -2778,7 +2778,7 @@ func BenchmarkServerGets(b *testing.B) {
 	defer st.Close()
 	st.greet()
 
-	// Give the server quota to reply. (plus it has the the 64KB)
+	// Give the server quota to reply. (plus it has the 64KB)
 	if err := st.fr.WriteWindowUpdate(0, uint32(b.N*len(msg))); err != nil {
 		b.Fatal(err)
 	}
@@ -2810,7 +2810,7 @@ func BenchmarkServerPosts(b *testing.B) {
 	defer st.Close()
 	st.greet()
 
-	// Give the server quota to reply. (plus it has the the 64KB)
+	// Give the server quota to reply. (plus it has the 64KB)
 	if err := st.fr.WriteWindowUpdate(0, uint32(b.N*len(msg))); err != nil {
 		b.Fatal(err)
 	}
@@ -3037,7 +3037,7 @@ func BenchmarkServer_GetRequest(b *testing.B) {
 	defer st.Close()
 
 	st.greet()
-	// Give the server quota to reply. (plus it has the the 64KB)
+	// Give the server quota to reply. (plus it has the 64KB)
 	if err := st.fr.WriteWindowUpdate(0, uint32(b.N*len(msg))); err != nil {
 		b.Fatal(err)
 	}
@@ -3068,7 +3068,7 @@ func BenchmarkServer_PostRequest(b *testing.B) {
 	})
 	defer st.Close()
 	st.greet()
-	// Give the server quota to reply. (plus it has the the 64KB)
+	// Give the server quota to reply. (plus it has the 64KB)
 	if err := st.fr.WriteWindowUpdate(0, uint32(b.N*len(msg))); err != nil {
 		b.Fatal(err)
 	}
