@@ -962,7 +962,7 @@ const (
 type AzureDiskVolumeSource struct {
 	// The Name of the data disk in the blob storage
 	DiskName string `json:"diskName"`
-	// The URI the the data disk in the blob storage
+	// The URI the data disk in the blob storage
 	DataDiskURI string `json:"diskURI"`
 	// Host Caching mode: None, Read Only, Read Write.
 	// +optional

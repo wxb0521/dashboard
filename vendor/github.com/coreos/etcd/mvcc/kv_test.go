@@ -663,7 +663,7 @@ func TestKVRestore(t *testing.T) {
 		}
 		s.Close()
 
-		// ns should recover the the previous state from backend.
+		// ns should recover the previous state from backend.
 		ns := NewStore(b, &lease.FakeLessor{}, nil)
 		// wait for possible compaction to finish
 		testutil.WaitSchedule()
